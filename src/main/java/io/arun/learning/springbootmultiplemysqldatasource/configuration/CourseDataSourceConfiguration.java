@@ -42,7 +42,7 @@ public class CourseDataSourceConfiguration {
 	public LocalContainerEntityManagerFactoryBean courseEntityManagerFactory(EntityManagerFactoryBuilder builder) {
 		return builder
 					.dataSource(courseDataSource())
-					.packages(Course.class)
+					.packages("io.arun.learning.springbootmultiplemysqldatasource.model.course")
 					.build();			
 	}
 	

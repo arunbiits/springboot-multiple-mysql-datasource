@@ -49,7 +49,7 @@ public class BookDataSourceConfiguration {
 	public LocalContainerEntityManagerFactoryBean bookEntityManagerFactory(EntityManagerFactoryBuilder builder) {
 		return builder
 				.dataSource(bookDataSource())
-				.packages(Book.class)
+				.packages("io.arun.learning.springbootmultiplemysqldatasource.model.book")
 				.build();
 	}
 	
